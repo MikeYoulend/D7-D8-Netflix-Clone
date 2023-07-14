@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Boostrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="NetflixClone.js">
+    <link rel="stylesheet" href="NetflixClone.css">
+    <title>Netflix Clone</title>
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg m-1 sticky-top">
+        <div class="container-fluid">
+
+            <img class="me-3 NetflixLogoNAV" src="./assets/imgs/Netflix_Logo_RGB.png" alt="">
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary Navli" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary Navli" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary Navli">Recently Added</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary Navli">My List</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav  ms-auto SecondUlNav">
+                    <li class="nav-item" role="button">
+                        <ion-icon class="nav-link text-white fs-5" name="search-sharp"></ion-icon>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white p-1" href="#">KIDS</a>
+                    </li>
+                    <li class="nav-item" role="button">
+                        <ion-icon class="nav-link text-white me-2 fs-5" name="notifications"></ion-icon>
+                    </li>
+                    <img class="ProfileImg me-2" src="./netflix-clone/assets/avatar.png" role="button" alt="">
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    
+
+    <main class="Main">
+        <div class="row">
+
+            <div class="d-flex mt-3">
+                <h2 class="me-5">TV Shows</h2>
+                <div class="dropdown">
+                    <button class="btn text-white dropdown-toggle DropdownMenu" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Generi
+                    </button>
+                    <ul class="dropdown-menu border-white bg-black">
+                        <li><a class="dropdown-item GeneriMenu" href="#">Action</a></li>
+                        <li><a class="dropdown-item GeneriMenu" href="#">Comedy</a></li>
+                        <li><a class="dropdown-item GeneriMenu" href="#">Horror</a></li>
+                    </ul>
+                </div>
+
+                <div class="ms-auto d-none d-sm-block position-relative">
+                    <ion-icon class="IconList_Grid1" name="list-outline"></ion-icon>
+                    <ion-icon class="IconList_Grid2" name="grid-outline"></ion-icon>
+                </div>
+            </div>
+
+
+
+            <section class="mt-5">
+                <h3>Trending now</h3>
+
+                <div class="container-fluid " role="button">
+                    <div class="row ">
+                        <div class="col ">
+                            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                                <div class="carousel-inner overflow-visible">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm ">
+                                                <img src="./assets/imgs/movies/1.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm overflow-visible">
+                                                <img src="./assets/imgs/movies/2.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/3.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/4.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/5.png" alt="Describe Image"
+                                                    class="img-fluid d-md-block">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/6.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/7.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/8.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/9.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/10.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/11.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/12.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/13.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/14.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/15.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/16.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/17.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/18.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3 class="mt-5">Watch it again</h3>
+
+                <div class="container-fluid" role="button">
+                    <div class="row">
+                        <div class="col">
+                            <div id="carouselExampleControls2" class="carousel slide " data-ride="carousel">
+                                <div class="carousel-inner overflow-visible">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/7.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/8.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/9.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/10.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/11.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/12.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/1.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/2.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/3.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/4.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/5.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/6.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/7.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/10.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/3.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/16.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/2.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/9.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"
+                                    data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls2" role="button"
+                                    data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3 class="mt-5">New Releases</h3>
+
+                <div class="container-fluid SectionY " role="button">
+                    <div class="row ">
+                        <div class="col ">
+                            <div id="carouselExampleControls3" class="carousel slide " data-ride="carousel">
+                                <div class="carousel-inner overflow-visible">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/18.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/17.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/16.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/15.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/14.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/13.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/12.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/11.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/10.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/9.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/8.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/7.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/6.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="col-6 col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/5.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/4.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-sm-block col-sm-3 col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/3.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/2.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="d-none d-lg-block col-lg-2 p-1 ImgFilm">
+                                                <img src="./assets/imgs/movies/1.png" alt="Describe Image"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls3" role="button"
+                                    data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls3" role="button"
+                                    data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <footer class="container-fluid">
+                <div class="row">
+
+                    <footer class="footer mt-5">
+
+                        <div class="mt-5 d-flex">
+
+                            <div class="col-2 col-sm-3"></div>
+
+                            <div class="mb-4 text-center">
+                                <ion-icon class="fs-1 text-secondary me-4 IconsFooter" name="logo-facebook"></ion-icon>
+                            </div>
+                            <div>
+                                <ion-icon class="fs-1 text-secondary me-4 IconsFooter" name="logo-instagram"></ion-icon>
+                            </div>
+                            <div>
+                                <ion-icon class="fs-1 text-secondary me-4 IconsFooter" name="logo-twitter"></ion-icon>
+                            </div>
+                            <div>
+                                <ion-icon class="fs-1 text-secondary me-4 IconsFooter" name="logo-youtube"></ion-icon>
+                            </div>
+
+                            <div class="col-3"></div>
+
+                        </div>
+
+
+
+                        <div class="mb-4 d-flex">
+
+                            <div class="col-2 col-sm-3"></div>
+
+                            <div class="col-2">
+                                <span class="fs-6 text-secondary FooterDescription">Audio and Subtitles</span>
+                            </div>
+                            <div class="col-2">
+                                <span class="fs-6 text-secondary FooterDescription">Audio Description</span>
+                            </div>
+                            <div class="col-2">
+                                <span class="fs-6  text-secondary FooterDescription">Help Center</span>
+                            </div>
+                            <div class="col-3">
+                                <span class="fs-6 text-secondary FooterDescription">Gift Cards</span>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="mb-4 d-flex">
+
+                            <div class="col-2 col-sm-3"></div>
+
+                            <div class="col-2">
+                                <span class="fs-6 text-secondary FooterDescription">Media Center</span>
+                            </div>
+                            <div class="col-2">
+                                <span class="fs-6 text-secondary FooterDescription">Investor Relations</span>
+                            </div>
+                            <div class="col-2">
+                                <span class="fs-6  text-secondary FooterDescription">Jobs</span>
+                            </div>
+                            <div class="col-3">
+                                <span class="fs-6 text-secondary FooterDescription">Terms of Use</span>
+                            </div>
+
+
+
+                        </div>
+                        <div class="mb-4 d-flex">
+
+                            <div class="col-2 col-sm-3"></div>
+
+                            <div class="col-2">
+                                <span class="fs-6 text-secondary FooterDescription">Privacy</span>
+                            </div>
+                            <div class="col-2">
+                                <span class="fs-6 text-secondary FooterDescription">Legal Notices</span>
+                            </div>
+                            <div class="col-2">
+                                <span class="fs-6  text-secondary FooterDescription">Cookie Preferences</span>
+                            </div>
+                            <div class="col-2">
+                                <span class="fs-6 text-secondary FooterDescription">Corporate Information</span>
+                            </div>
+
+
+
+                        </div>
+                        <div class="mb-4 d-flex">
+
+                            <div class="col-2 col-sm-3"></div>
+
+                            <div class="col-9">
+                                <span class="fs-6 text-secondary FooterDescription">Contact Us</span>
+                           
+
+                        </div>
+
+                        </div>
+
+                        <div class="mb-3 d-flex">
+
+                            <div class="col-2 col-sm-3"></div>
+
+                            <div class="col-9">
+                                <span class="fs-6 text-secondary ServiceCode">Service Code</span>
+                           
+
+                        </div>
+
+                        </div>
+
+                        <div class="mb-3 d-flex">
+
+                            <div class="col-2 col-sm-3"></div>
+
+                            <div class="col-9">
+                                <span class="text-secondary FinalC ">© 1997-2023 Netflix, inc</span>
+                           
+
+                        </div>
+
+                        </div>
+                        
+                    </footer>
+
+                </div>
+            </footer>
+
+
+
+            <script src="NetflixClone.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <script src="./Boostrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

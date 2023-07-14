@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
+    overflow-x: visible;
+}
+
+.navbar {
+  background-color: #141414;
+}
+
+
+.NetflixLogoNAV {
+    width: 100px;
+}
+
+
+.Navli:hover {
+    color: white !important;
+    cursor: pointer;
+}
+
+
+
+.ProfileImg {
+    width: 50px;
+}
+
+.SecondUlNav {
+  display: flex;
+  align-items: center;
+}
+
+
+.Main {
+    padding: 0px 60px;
+  
+    
+}
+
+.DropdownMenu {
+    border: 2px solid white !important;
+}
+
+.GeneriMenu {
+    color: rgb(165, 163, 163);
+}
+
+.IconList_Grid1 {
+  position: absolute;
+  right: 83px;
+  font-size: 1.7rem;
+  border: 1px solid white;
+  padding: 5px 8px;
+  color: white;
+  background: #00000000; 
+  cursor: pointer;
+  
+}
+
+.IconList_Grid2 {
+  font-size: 1.7rem;
+  border: 1px solid white;
+  padding: 5px 8px;
+  color: white;
+  background: #00000000; 
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.SectionY {
+  height: 200px;
+}
+
+
+.ImgFilm {
+  transition: 0.5s;
+}
+
+.ImgFilm:hover {
+  transform: scale(1.1);
+  overflow: visible;
+}
+
+.carousel-control-next {
+  width: 50px;
+}
+
+.carousel-control-next-icon {
+  background-color: #141414;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.carousel-control-prev {
+  width: 50px;
+}
+
+.carousel-control-prev-icon {
+  background-color: #141414;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.ServiceCode {
+  border: 2px solid gray;
+  padding: 8px;
+}
+
+.FinalC {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .Main {
+    padding: 25px;
+  }
+ 
+  .IconsFooter {
+    font-size: 2rem !important;
+  }
+  
+  .FooterDescription {
+    font-size: 0.8rem !important;
+  }
+
+  .ServiceCode {
+    font-size: 0.8rem !important;
+    
+  }
+
+  .FinalC {
+    font-size: 0.7rem !important; 
+  }
+}
+
+@media screen and (max-width: 992px) { 
+  .SecondUlNav {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  
+
+}
+
+@media screen and (max-width: 425px) {
+  .Main {
+    padding: 10px;
+  }
+
+  .DropdownMenu {
+    margin-left: 60px;
+  }
+
+  
+
+  .footer {
+    margin-top: -15px !important;
+
+  }
+  .IconsFooter {
+    font-size: 2rem !important;
+    
+  }
+
+  .FooterDescription {
+    font-size: 0.5rem !important;
+  }
+
+}
